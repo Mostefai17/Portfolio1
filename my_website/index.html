@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mohamed Ilias Mostefai — Backend Development student building APIs, authentication systems, and scalable applications.">
+  <title>Mohamed Ilias Mostefai — Backend Development Student</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <header>
+    <nav id="main-nav" class="navbar navbar-expand-lg sticky-top navbar-dark border-bottom border-secondary-subtle">
+      <div class="container py-2 py-lg-0">
+        <a class="navbar-brand font-mono fw-semibold" href="#hero">
+          <span class="text-accent">&lt;</span>MIM<span class="text-accent">/&gt;</span>
+        </a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#journey">Journey</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero — full viewport height -->
+    <section id="hero" class="section min-vh-100 d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7">
+            <p class="hero-eyebrow text-accent font-mono small text-uppercase letter-spacing mb-3">Backend Engineering Student</p>
+            <h1 class="hero-name display-3 fw-semibold lh-sm mb-4">
+              Mohamed Ilias <span class="text-accent">Mostefai</span>
+            </h1>
+            <p class="hero-subtitle lead text-body-secondary mb-4 mb-lg-5 pe-lg-4">
+              Backend developer focused on <span class="hero-keyword">API design</span>,
+              <span class="hero-keyword">authentication</span>, <span class="hero-keyword">databases</span>,
+              and maintainable server-side applications.
+            </p>
+            <div class="hero-actions d-flex flex-wrap gap-3">
+              <a href="#projects" class="btn btn-accent btn-lg px-4 hero-btn">
+                View Projects
+                <i class="bi bi-arrow-right ms-2 hero-btn-icon" aria-hidden="true"></i>
+              </a>
+              <a href="#contact" class="btn btn-outline-secondary btn-lg px-4 hero-btn hero-btn-outline">
+                Contact
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="card hero-terminal bg-body-tertiary border-secondary-subtle">
+              <div class="card-header bg-dark border-secondary-subtle d-flex align-items-center gap-2 py-2">
+                <span class="terminal-dot bg-danger"></span>
+                <span class="terminal-dot bg-warning"></span>
+                <span class="terminal-dot bg-success"></span>
+                <span class="font-mono small text-body-secondary ms-auto">~/backend</span>
+              </div>
+              <div class="card-body font-mono small text-body-secondary">
+                <p class="mb-2"><span class="text-accent">$</span> whoami</p>
+                <p class="text-body-emphasis mb-3">mohamed_ilias — backend student</p>
+                <p class="mb-2"><span class="text-accent">$</span> cat stack.txt</p>
+                <p class="text-body-emphasis mb-2">REST APIs · Auth · PostgreSQL</p>
+                <p class="text-body-emphasis mb-0">Docker · clean backend services<span class="terminal-cursor text-accent">_</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#about" class="hero-scroll-hint" aria-label="Scroll to about section">
+          <i class="bi bi-chevron-down" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-4">
+            <h2 class="section-label font-mono">01 — About</h2>
+          </div>
+          <div class="col-lg-8">
+            <p class="about-intro h4 fw-normal lh-base mb-5">
+              I'm Mohamed Ilias Mostefai, a self-taught backend developer and
+              <a href="https://www.esgen.edu.dz" target="_blank" rel="noopener noreferrer" class="link-accent fw-semibold text-body text-decoration-none">ESGEN student</a>
+              building practical server-side projects with Python, Django, SQL, and API-first design.
+            </p>
+
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="about-block border-top border-secondary-subtle pt-4 h-100">
+                  <div class="d-flex align-items-center gap-2 mb-3">
+                    <i class="bi bi-book text-accent" aria-hidden="true"></i>
+                    <h3 class="h6 fw-semibold mb-0">Current Focus</h3>
+                  </div>
+                  <p class="text-body-secondary small mb-3">
+                    Strengthening the fundamentals recruiters expect from a backend candidate:
+                    clear API contracts, reliable data models, and authentication flows that are easy to reason about.
+                  </p>
+                  <ul class="list-unstyled small text-body-secondary mb-0 about-list">
+                    <li>REST API design and documentation</li>
+                    <li>Django models, views, and permissions</li>
+                    <li>PostgreSQL schema design</li>
+                    <li>Docker-based development environments</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-block border-top border-secondary-subtle pt-4 h-100">
+                  <div class="d-flex align-items-center gap-2 mb-3">
+                    <i class="bi bi-gear text-accent" aria-hidden="true"></i>
+                    <h3 class="h6 fw-semibold mb-0">How I Work</h3>
+                  </div>
+                  <p class="text-body-secondary small mb-3">
+                    I prefer small, testable features with readable code, explicit validation, and simple deployment paths.
+                  </p>
+                  <ul class="list-unstyled small text-body-secondary mb-0 about-list">
+                    <li>Readable code over clever abstractions</li>
+                    <li>Validation and error handling early</li>
+                    <li>Database structure before UI polish</li>
+                    <li>Consistent Git and documentation habits</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="row gy-4 mb-5">
+          <div class="col-lg-4">
+            <h2 class="section-label font-mono">02 — Skills</h2>
+          </div>
+          <div class="col-lg-8">
+            <p class="h4 fw-normal mb-0">Backend technologies I use in coursework and personal projects.</p>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skills-category mb-5">
+          <h3 class="skills-category-label font-mono small text-uppercase text-body-secondary mb-4">
+            <i class="bi bi-hdd-network text-accent me-2" aria-hidden="true"></i>Backend
+          </h3>
+          <div class="row g-3 g-md-4">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card skill-card h-100 bg-body border-secondary-subtle">
+                <div class="card-body">
+                  <i class="bi bi-braces skill-card-icon text-accent" aria-hidden="true"></i>
+                  <h4 class="skill-card-name h6 fw-semibold mb-0">Node.js / Express</h4>
+                  <p class="skill-card-desc small text-body-secondary mb-0">Building REST APIs with middleware, routing, and structured error handling.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card skill-card h-100 bg-body border-secondary-subtle">
+                <div class="card-body">
+                  <i class="bi bi-filetype-py skill-card-icon text-accent" aria-hidden="true"></i>
+                  <h4 class="skill-card-name h6 fw-semibold mb-0">Python / Django</h4>
+                  <p class="skill-card-desc small text-body-secondary mb-0">Server-side logic with ORM integration, admin panels, and clean MVC patterns.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card skill-card h-100 bg-body border-secondary-subtle">
+                <div class="card-body">
+                  <i class="bi bi-shield-lock skill-card-icon text-accent" aria-hidden="true"></i>
+                  <h4 class="skill-card-name h6 fw-semibold mb-0">JWT Authentication</h4>
+                  <p class="skill-card-desc small text-body-secondary mb-0">Token-based auth flows with secure login, refresh, and protected routes.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card skill-card h-100 bg-body border-secondary-subtle">
+                <div class="card-body">
+                  <i class="bi bi-arrow-left-right skill-card-icon text-accent" aria-hidden="true"></i>
+                  <h4 class="skill-card-name h6 fw-semibold mb-0">REST APIs</h4>
+                  <p class="skill-card-desc small text-body-secondary mb-0">Resource-oriented endpoints with proper HTTP methods, status codes, and versioning.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skills-category mb-5">
+          <h3 class="skills-category-label font-mono small text-uppercase text-body-secondary mb-4">
+            <i class="bi bi-database text-accent me-2" aria-hidden="true"></i>Database
+          </h3>
+          <div class="row g-3 g-md-4">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card skill-card h-100 bg-body border-secondary-subtle">
+                <div class="card-body">
+                  <i class="bi bi-table skill-card-icon text-accent" aria-hidden="true"></i>
+                  <h4 class="skill-card-name h6 fw-semibold mb-0">PostgreSQL</h4>
+                  <p class="skill-card-desc small text-body-secondary mb-0">Relational modeling, joins, indexes, and migrations for production schemas.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card skill-card h-100 bg-body border-secondary-subtle">
+                <div class="card-body">
+                  <i class="bi bi-search skill-card-icon text-accent" aria-hidden="true"></i>
+                  <h4 class="skill-card-name h6 fw-semibold mb-0">SQL</h4>
+                  <p class="skill-card-desc small text-body-secondary mb-0">Complex queries, aggregations, and understanding query execution plans.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card skill-card h-100 bg-body border-secondary-subtle">
+                <div class="card-body">
+                  <i class="bi bi-diagram-3 skill-card-icon text-accent" aria-hidden="true"></i>
+                  <h4 class="skill-card-name h6 fw-semibold mb-0">Schema Design</h4>
+                  <p class="skill-card-desc small text-body-secondary mb-0">Normalization, foreign keys, and designing tables that scale with the application.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card skill-card h-100 bg-body border-secondary-subtle">
+                <div class="card-body">
+                  <i class="bi bi-lightning skill-card-icon text-accent" aria-hidden="true"></i>
+                  <h4 class="skill-card-name h6 fw-semibold mb-0">Redis</h4>
+                  <p class="skill-card-desc small text-body-secondary mb-0">In-memory caching and session storage for faster response times.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skills-category mb-5">
+          <h3 class="skills-category-label font-mono small text-uppercase text-body-secondary mb-4">
+            <i class="bi bi-tools text-accent me-2" aria-hidden="true"></i>Tools
+          </h3>
+          <div class="row g-3 g-md-4">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card skill-card h-100 bg-body border-secondary-subtle">
+                <div class="card-body">
+                  <i class="bi bi-git skill-card-icon text-accent" aria-hidden="true"></i>
+                  <h4 class="skill-card-name h6 fw-semibold mb-0">Git</h4>
+                  <p class="skill-card-desc small text-body-secondary mb-0">Branching workflows, meaningful commits, and collaborative code review.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card skill-card h-100 bg-body border-secondary-subtle">
+                <div class="card-body">
+                  <i class="bi bi-box-seam skill-card-icon text-accent" aria-hidden="true"></i>
+                  <h4 class="skill-card-name h6 fw-semibold mb-0">Docker</h4>
+                  <p class="skill-card-desc small text-body-secondary mb-0">Containerizing services for consistent dev environments and deployment.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card skill-card h-100 bg-body border-secondary-subtle">
+                <div class="card-body">
+                  <i class="bi bi-send skill-card-icon text-accent" aria-hidden="true"></i>
+                  <h4 class="skill-card-name h6 fw-semibold mb-0">Postman</h4>
+                  <p class="skill-card-desc small text-body-secondary mb-0">API testing, collection management, and documenting endpoint behavior.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card skill-card h-100 bg-body border-secondary-subtle">
+                <div class="card-body">
+                  <i class="bi bi-terminal skill-card-icon text-accent" aria-hidden="true"></i>
+                  <h4 class="skill-card-name h6 fw-semibold mb-0">Linux</h4>
+                  <p class="skill-card-desc small text-body-secondary mb-0">Command-line navigation, process management, and server environment setup.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Currently Learning -->
+        <div class="skills-category">
+          <h3 class="skills-category-label font-mono small text-uppercase text-body-secondary mb-4">
+            <i class="bi bi-mortarboard text-accent me-2" aria-hidden="true"></i>Currently Learning
+          </h3>
+          <div class="row g-3 g-md-4">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card skill-card skill-card-learning h-100 bg-body border-secondary-subtle">
+                <div class="card-body">
+                  <i class="bi bi-diagram-2 skill-card-icon text-accent" aria-hidden="true"></i>
+                  <h4 class="skill-card-name h6 fw-semibold mb-0">Kubernetes</h4>
+                  <p class="skill-card-desc small text-body-secondary mb-0">Container orchestration, pods, and deploying services at scale.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card skill-card skill-card-learning h-100 bg-body border-secondary-subtle">
+                <div class="card-body">
+                  <i class="bi bi-share skill-card-icon text-accent" aria-hidden="true"></i>
+                  <h4 class="skill-card-name h6 fw-semibold mb-0">GraphQL</h4>
+                  <p class="skill-card-desc small text-body-secondary mb-0">Flexible query language for APIs with precise data fetching.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card skill-card skill-card-learning h-100 bg-body border-secondary-subtle">
+                <div class="card-body">
+                  <i class="bi bi-envelope skill-card-icon text-accent" aria-hidden="true"></i>
+                  <h4 class="skill-card-name h6 fw-semibold mb-0">Message Queues</h4>
+                  <p class="skill-card-desc small text-body-secondary mb-0">Async task processing with RabbitMQ and event-driven patterns.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card skill-card skill-card-learning h-100 bg-body border-secondary-subtle">
+                <div class="card-body">
+                  <i class="bi bi-code-slash skill-card-icon text-accent" aria-hidden="true"></i>
+                  <h4 class="skill-card-name h6 fw-semibold mb-0">Go</h4>
+                  <p class="skill-card-desc small text-body-secondary mb-0">Statically typed language for high-performance backend services.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="row gy-4 mb-5">
+          <div class="col-lg-4">
+            <h2 class="section-label font-mono">03 — Projects</h2>
+          </div>
+          <div class="col-lg-8">
+            <p class="h4 fw-normal mb-0">Selected backend work with clear scope and implementation details.</p>
+          </div>
+        </div>
+        <div class="card border-success bg-body mb-5">
+          <div class="card-header border-secondary-subtle bg-body-tertiary">
+            <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+              <div>
+                <span class="badge text-bg-success mb-2">Featured Project</span>
+                <h3 class="h2 fw-semibold mb-0">Access Control Management System</h3>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge text-bg-dark border border-secondary-subtle">Python</span>
+                <span class="badge text-bg-dark border border-secondary-subtle">Django</span>
+                <span class="badge text-bg-dark border border-secondary-subtle">PostgreSQL</span>
+                <span class="badge text-bg-dark border border-secondary-subtle">Redis</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body p-4 p-lg-5">
+            <div class="row g-4 g-lg-5 align-items-start">
+              <div class="col-lg-5">
+                <p class="lead text-body-secondary mb-4">
+                  A backend-focused access control project covering authentication, role-based authorization, granular permissions, and traceable audit activity.
+                </p>
+
+                <div class="list-group list-group-flush mb-4">
+                  <div class="list-group-item bg-transparent border-secondary-subtle px-0 d-flex gap-3">
+                    <i class="bi bi-diagram-3 text-success" aria-hidden="true"></i>
+                    <div>
+                      <h4 class="h6 fw-semibold mb-1">Architecture Overview</h4>
+                      <p class="small text-body-secondary mb-0">Django service layer, PostgreSQL data model, Redis-backed sessions, and policy checks before protected actions.</p>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-transparent border-secondary-subtle px-0 d-flex gap-3">
+                    <i class="bi bi-shield-lock text-success" aria-hidden="true"></i>
+                    <div>
+                      <h4 class="h6 fw-semibold mb-1">Authentication Flow</h4>
+                      <p class="small text-body-secondary mb-0">Credential validation, secure token issue, session refresh, logout invalidation, and route protection.</p>
+                    </div>
+                  </div>
+                  <div class="list-group-item bg-transparent border-secondary-subtle px-0 d-flex gap-3">
+                    <i class="bi bi-clipboard-data text-success" aria-hidden="true"></i>
+                    <div>
+                      <h4 class="h6 fw-semibold mb-1">Audit Logs</h4>
+                      <p class="small text-body-secondary mb-0">Every sensitive login, role change, permission update, and administrative action is recorded for review.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-wrap gap-2" aria-label="Project status">
+                  <span class="badge text-bg-success">In progress</span>
+                  <span class="badge text-bg-dark border border-secondary-subtle">Portfolio case study</span>
+                </div>
+              </div>
+
+              <div class="col-lg-7">
+                <div class="row g-3 mb-4">
+                  <div class="col-sm-4">
+                    <div class="card h-100 bg-body-tertiary border-secondary-subtle">
+                      <div class="card-body">
+                        <p class="small text-success text-uppercase fw-semibold mb-1">Roles</p>
+                        <p class="h4 mb-1">4+</p>
+                        <p class="small text-body-secondary mb-0">Admin, manager, staff, auditor</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card h-100 bg-body-tertiary border-secondary-subtle">
+                      <div class="card-body">
+                        <p class="small text-success text-uppercase fw-semibold mb-1">Permissions</p>
+                        <p class="h4 mb-1">CRUD</p>
+                        <p class="small text-body-secondary mb-0">Per-module policy rules</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card h-100 bg-body-tertiary border-secondary-subtle">
+                      <div class="card-body">
+                        <p class="small text-success text-uppercase fw-semibold mb-1">Logging</p>
+                        <p class="h4 mb-1">Full</p>
+                        <p class="small text-body-secondary mb-0">Traceable admin activity</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion" id="accessControlDetails">
+                  <div class="accordion-item bg-body border-secondary-subtle">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button bg-body text-body" type="button" data-bs-toggle="collapse" data-bs-target="#architectureOverview" aria-expanded="true" aria-controls="architectureOverview">
+                        Architecture Overview
+                      </button>
+                    </h4>
+                    <div id="architectureOverview" class="accordion-collapse collapse show" data-bs-parent="#accessControlDetails">
+                      <div class="accordion-body text-body-secondary">
+                        The system separates authentication, authorization, account management, and audit concerns so each layer stays understandable and testable. Views validate requests, services apply business rules, and database constraints protect role and permission integrity.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-body border-secondary-subtle">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button collapsed bg-body text-body" type="button" data-bs-toggle="collapse" data-bs-target="#authenticationFlow" aria-expanded="false" aria-controls="authenticationFlow">
+                        Authentication Flow
+                      </button>
+                    </h4>
+                    <div id="authenticationFlow" class="accordion-collapse collapse" data-bs-parent="#accessControlDetails">
+                      <div class="accordion-body">
+                        <ol class="list-group list-group-numbered">
+                          <li class="list-group-item bg-transparent text-body-secondary border-secondary-subtle">User submits credentials through a validated login endpoint.</li>
+                          <li class="list-group-item bg-transparent text-body-secondary border-secondary-subtle">Django verifies the account, status, and password hash.</li>
+                          <li class="list-group-item bg-transparent text-body-secondary border-secondary-subtle">The session or token is issued with role context and expiry rules.</li>
+                          <li class="list-group-item bg-transparent text-body-secondary border-secondary-subtle">Protected requests pass through middleware before reaching the view.</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-body border-secondary-subtle">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button collapsed bg-body text-body" type="button" data-bs-toggle="collapse" data-bs-target="#rolesPermissions" aria-expanded="false" aria-controls="rolesPermissions">
+                        User Roles &amp; Permissions
+                      </button>
+                    </h4>
+                    <div id="rolesPermissions" class="accordion-collapse collapse" data-bs-parent="#accessControlDetails">
+                      <div class="accordion-body">
+                        <div class="table-responsive">
+                          <table class="table table-dark table-striped table-hover align-middle mb-0">
+                            <thead>
+                              <tr>
+                                <th scope="col">Role</th>
+                                <th scope="col">Access Level</th>
+                                <th scope="col">Primary Permissions</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">Admin</th>
+                                <td>System-wide</td>
+                                <td>Manage users, roles, permissions, and logs</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Manager</th>
+                                <td>Operational</td>
+                                <td>Assign roles, approve access, review team activity</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Staff</th>
+                                <td>Scoped</td>
+                                <td>Use assigned modules and update owned records</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Auditor</th>
+                                <td>Read-only</td>
+                                <td>Inspect activity logs and permission history</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-body border-secondary-subtle">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button collapsed bg-body text-body" type="button" data-bs-toggle="collapse" data-bs-target="#auditLogs" aria-expanded="false" aria-controls="auditLogs">
+                        Audit Logs
+                      </button>
+                    </h4>
+                    <div id="auditLogs" class="accordion-collapse collapse" data-bs-parent="#accessControlDetails">
+                      <div class="accordion-body text-body-secondary">
+                        Audit records capture actor, action, target resource, timestamp, request context, and outcome. This makes access reviews practical and gives administrators a clear history of security-sensitive changes.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <article class="card project-card h-100 border-secondary-subtle bg-body">
+              <div class="card-body d-flex flex-column">
+                <div class="project-card-header">
+                  <i class="bi bi-folder2-open project-icon text-accent" aria-hidden="true"></i>
+                  <span class="badge text-bg-dark border border-secondary-subtle">Course platform feature</span>
+                </div>
+
+                <h3 class="project-title">Assessment Feature for Online Course Map</h3>
+
+                <p class="project-description text-body-secondary">
+                  Extended an existing course mapping platform with assessment management,
+                  progress tracking, and grade calculation logic.
+                </p>
+
+                <div class="project-features text-body-secondary">
+                  <strong class="text-body-secondary">Scope:</strong>
+                  <ul>
+                    <li>Assessment creation and update flows</li>
+                    <li>Student progress and completion tracking</li>
+                    <li>Grade calculation and result storage</li>
+                    <li>Integration with the existing course structure</li>
+                  </ul>
+                </div>
+
+                <div class="project-tech mb-0">
+                  <span class="project-badge">Django</span>
+                  <span class="project-badge">Python</span>
+                  <span class="project-badge">PostgreSQL</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <article class="card project-card h-100 border-secondary-subtle bg-body">
+              <div class="card-body d-flex flex-column">
+                <div class="project-card-header">
+                  <i class="bi bi-folder2-open project-icon text-accent" aria-hidden="true"></i>
+                  <span class="badge text-bg-dark border border-secondary-subtle">Deployment practice</span>
+                </div>
+
+                <h3 class="project-title">Deployment Workflow Practice Lab</h3>
+
+                <p class="project-description text-body-secondary">
+                  A focused backend deployment exercise for containerized services, health checks,
+                  rollback planning, and environment-aware configuration.
+                </p>
+
+                <div class="project-features text-body-secondary">
+                  <strong class="text-body-secondary">Scope:</strong>
+                  <ul>
+                    <li>Dockerized service setup</li>
+                    <li>Health-check endpoint design</li>
+                    <li>Configuration for local and staged environments</li>
+                    <li>Rollback checklist and release notes</li>
+                  </ul>
+                </div>
+
+                <div class="project-tech mb-0">
+                  <span class="project-badge">Python</span>
+                  <span class="project-badge">Docker</span>
+                  <span class="project-badge">Linux</span>
+                  <span class="project-badge">Git</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <article class="card project-card h-100 border-secondary-subtle bg-body">
+              <div class="card-body d-flex flex-column">
+                <div class="project-card-header">
+                  <i class="bi bi-folder2-open project-icon text-accent" aria-hidden="true"></i>
+                  <span class="badge text-bg-dark border border-secondary-subtle">API project</span>
+                </div>
+
+                <h3 class="project-title">REST API with Flask &amp; Bootstrap UI</h3>
+
+                <p class="project-description text-body-secondary">
+                  Lightweight REST service with a simple Bootstrap interface, request validation,
+                  structured errors, and endpoint documentation.
+                </p>
+
+                <div class="project-features text-body-secondary">
+                  <strong class="text-body-secondary">Scope:</strong>
+                  <ul>
+                    <li>Resource-oriented API endpoints</li>
+                    <li>Input validation and error responses</li>
+                    <li>Bootstrap interface for core workflows</li>
+                    <li>Swagger-style API documentation</li>
+                  </ul>
+                </div>
+
+                <div class="project-tech mb-0">
+                  <span class="project-badge">Python</span>
+                  <span class="project-badge">Flask</span>
+                  <span class="project-badge">Bootstrap</span>
+                  <span class="project-badge">SQLite</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey -->
+    <section id="journey" class="section">
+      <div class="container">
+        <div class="row gy-4 mb-5">
+          <div class="col-lg-4">
+            <h2 class="section-label font-mono">04 — Journey</h2>
+          </div>
+          <div class="col-lg-8">
+            <p class="h4 fw-normal mb-0">The path that shaped how I build.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 offset-lg-4">
+            <div class="border-start border-secondary-subtle ps-4">
+              <div class="mb-5 pb-1">
+                <p class="font-mono small text-accent mb-1">2024 — Present</p>
+                <h3 class="h5 fw-semibold mb-1">Backend Development Student</h3>
+                <p class="small text-body-secondary mb-2">Self-taught track</p>
+                <p class="text-body-secondary small mb-0">Building backend projects focused on APIs, authentication, data modeling, and maintainable code.</p>
+              </div>
+              <div class="mb-5 pb-1">
+                <p class="font-mono small text-accent mb-1">2023 — 2029</p>
+                <h3 class="h5 fw-semibold mb-1">ESGEN Student</h3>
+                <p class="small text-body-secondary mb-2">ESGEN</p>
+                <p class="text-body-secondary small mb-0">Studying computer science alongside management and digital economy, with a focus on understanding both implementation details and business context.</p>
+              </div>
+              <div>
+                <p class="font-mono small text-accent mb-1">2015 — 2023</p>
+                <h3 class="h5 fw-semibold mb-1">Help Desk Specialist</h3>
+                <p class="small text-body-secondary mb-2">Computer Repair Shop</p>
+                <p class="text-body-secondary small mb-0">Provided hands-on technical support, diagnosed hardware and software issues, and built a practical troubleshooting foundation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="row gy-4 mb-5">
+          <div class="col-lg-4">
+            <h2 class="section-label font-mono">05 — Contact</h2>
+          </div>
+          <div class="col-lg-8">
+            <p class="h4 fw-normal mb-3">Let's connect about backend engineering opportunities.</p>
+            <p class="text-body-secondary mb-0">
+              The fastest way to reach me is by email. You can also review my code on GitHub
+              or connect with me professionally on LinkedIn.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-3 g-md-4">
+          <div class="col-md-4">
+            <a href="mailto:mohamediliasmostefai_etd@esgen.edu.dz" class="card h-100 bg-body border-secondary-subtle text-decoration-none">
+              <div class="card-body d-flex align-items-start gap-3">
+                <i class="bi bi-envelope-at fs-4 text-accent" aria-hidden="true"></i>
+                <div>
+                  <h3 class="h6 fw-semibold text-body mb-1">Email</h3>
+                  <p class="small text-body-secondary text-break mb-0">mohamediliasmostefai_etd@esgen.edu.dz</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://github.com/Mostefai17" class="card h-100 bg-body border-secondary-subtle text-decoration-none" target="_blank" rel="noopener noreferrer">
+              <div class="card-body d-flex align-items-start gap-3">
+                <i class="bi bi-github fs-4 text-accent" aria-hidden="true"></i>
+                <div>
+                  <h3 class="h6 fw-semibold text-body mb-1">GitHub</h3>
+                  <p class="small text-body-secondary text-break mb-0">github.com/Mostefai17</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://www.linkedin.com/in/mohamed-ilias-mostefai-5395ab36b/" class="card h-100 bg-body border-secondary-subtle text-decoration-none" target="_blank" rel="noopener noreferrer">
+              <div class="card-body d-flex align-items-start gap-3">
+                <i class="bi bi-linkedin fs-4 text-accent" aria-hidden="true"></i>
+                <div>
+                  <h3 class="h6 fw-semibold text-body mb-1">LinkedIn</h3>
+                  <p class="small text-body-secondary text-break mb-0">Mohamed Ilias Mostefai</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-top border-secondary-subtle py-4">
+    <div class="container">
+      <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+        <p class="font-mono small text-body-secondary mb-0">&copy; <span id="year"></span> Mohamed Ilias Mostefai. Built with Bootstrap.</p>
+        <a href="#hero" class="font-mono small text-body-secondary text-decoration-none">
+          <i class="bi bi-arrow-up"></i> Top
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
